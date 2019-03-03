@@ -1,0 +1,117 @@
+a,button {
+    cursor: pointer;
+}
+
+.section-container h2 {
+    text-align: center;
+    letter-spacing: 0.2em;
+    opacity: 0.7;
+    border-bottom: 1px solid gray;
+}
+
+#header {
+    max-width: 960px;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+.social-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px 0;
+}
+
+.social-container a {
+    margin-left: 20px;
+}
+
+.menu-container {
+    display: flex;
+}
+
+#header .menu-container {
+    justify-content: flex-end;
+}
+
+#footer .menu-container {
+    justify-content: flex-start;
+}
+
+.menu-container ul li {
+    display: inline-block;
+    position: relative;
+    margin-left: 50px;
+}
+
+.menu-container ul li:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    right: 0;
+    bottom: 0;
+    background-color: gray;
+    transform: scale(0);
+    transform-origin: bottom right;
+    transition: transform 0.2s;
+}
+
+.menu-container ul li:hover:before {
+    transform: scale(1);
+}
+
+.products .contents {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contents li {
+    display: inline-block;
+    width: 250px;
+    /* height: 100%; */
+    outline: none;
+    margin-left: 20px;
+    vertical-align: top;
+}
+
+.contents li img {
+    width: 100%;
+}
+
+.contents h3 {
+    text-align: center;
+}
+
+.contacts .contents {
+    text-align: center;
+}
+.contacts .contents p{
+    position: relative;
+    color: white;
+    font-size: 2em;
+    background: #140f0f8c;
+    text-align: center;
+    width: 600px;
+    margin: 40px auto;
+}
+
+.clip-copy {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    margin: auto 0;
+    color: white;
+    background-color: inherit;
+    border: none;
+    font-size: 1em;
+}
+
+#footer {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.6);
+}
